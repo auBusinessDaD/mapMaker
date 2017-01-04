@@ -1,0 +1,14 @@
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  transition: $transition;
+}
+
+/*
+  DESCRIPTION
+  This makes your code quite bloated which can hurt the readability, but this is also solved by using a mixin for it.
+
+  USAGE
+  @include transition(color .3s ease);
+*/

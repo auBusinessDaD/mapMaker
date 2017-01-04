@@ -1,0 +1,65 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+#
+#   Default Includes
+#
+meteor-base@1.0.4               # Packages every Meteor app needs to have
+mobile-experience@1.0.4         # Packages for a great mobile UX
+mongo@1.1.14                    # The database Meteor supports right now
+blaze-html-templates            # Compile .html files into Meteor Blaze views
+reactive-var@1.0.11             # Reactive variable for tracker
+jquery@1.11.10                  # Helpful client-side library
+tracker@1.1.1                   # Meteor's client-side reactive programming library
+standard-minifier-css@1.3.2     # CSS minifier run for production mode
+standard-minifier-js@1.2.1      # JS minifier run for production mode
+es5-shim@4.6.15                 # ECMAScript 5 compatibility for older browsers.
+ecmascript@0.6.1                # Enable ECMAScript2015+ syntax in app code
+
+#
+#   Security and User Packages
+#
+#autopublish                    # Publish all data to the clients (for prototyping)
+#insecure                       # Allow all DB writes from clients (for prototyping)
+browser-policy                  # Allows for the setting of CSP Headers in Meteor
+accounts-ui@1.1.9               # basic user package to enable login
+accounts-password@1.3.3         # basic user password management
+mizzao:user-status              # provides access to user login state
+alanning:roles                  # provides roles for users
+gwendall:impersonate            # provides user impersonation for admin users
+gwendall:auth-client-callbacks  # provides user login/logout callbacks
+email                           # Allow sending emails for basic system functions like password resets etc
+
+#
+#   Extra Features
+#
+kadira:flow-router              # simple page router for meteor
+kadira:blaze-layout             # Allows dynamic rendering of layouts
+aldeed:collection2              # schema for collections
+aldeed:autoform                 # automatic generation of forms
+jeremy:selectize                # Selectize is a hybrid of a textbox and <select> element used for tagging, contact lists, and more.
+comerc:autoform-selectize       # Custom "selectize" input type for AutoForm
+fortawesome:fontawesome         # Icon font package
+fourseven:scss                  # SASS (.scss) Support for Meteor
+mizzao:sharejs                  # Provides collaborative editing functions
+raix:handlebar-helpers          # Provides session variable functions
+fastclick                       # Reduces tap (click) time on mobile platforms
+zimme:active-route              # Helpers for determining active route
+spiderable                      # Provides the ability to be crawlable by search engines
+check                           # provides check() functionality
+themeteorchef:jquery-validation # jQuery Validation repackaged for Meteor
+stevezhu:lodash                 # Lodash makes JavaScript easier by taking the hassle out of working with arrays, numbers, objects, strings, etc.
+peppelg:bootstrap-3-modal		    # Simple usage of bootstrap 3 modals.
+themeteorchef:bert              # A client side, multi-style alerts system for Meteor.
+kevohagan:sweetalert			      # a beautiful replacement for javascript's alert()
+meteorhacks:ssr                 # Server Side Rendering for Meteor
+meteorhacks:fast-render         # Render you app even before the DDP connection is live
+
+#
+#   Development Packages
+#
+meteortoys:allthings            # Adds meteor tools for development
+shell-server@0.2.1              # Server-side component of the `meteor shell` command

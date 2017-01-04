@@ -1,0 +1,20 @@
+<template name="GamesItem">
+  <article class="gameItem">
+		{{#if editMode}}
+      {{#autoForm collection="Games" id="updateGameId" type="update" doc=this autosave=true}}
+        <fieldset>
+          <legend>Edit {{name}}</legend>
+          {{> afQuickField name='name'}}
+          {{> afQuickField name='description'}}
+        </fieldset>
+      {{/autoForm}}
+      <i class="fa fa-close editGame" title="Close Edit"></i>
+		{{else}}
+      <h3>{{name}}</h3>
+			<p>{{description}}</p>
+      <i class="fa fa-eye viewGame" title="View Game"></i>
+      <i class="fa fa-pencil editGame" title="Edit Game"></i>
+  		<i class="fa fa-share viewCampaigns" title="View Campaigns"></i>
+		{{/if}}
+	</article>
+</template>

@@ -1,0 +1,29 @@
+@mixin bp-uhd {
+  @media only screen and (min-width: 2500px) {
+    @content;
+  }
+}
+
+@mixin bp-tablet {
+  @media only screen and (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin bp-mobile {
+  @media only screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+/*
+  DESCRIPTION
+  When Sass 3.2 was released some time ago, they made it possible to define names to our media queries, which makes the usage of them a lot cleaner. Instead of calling them @media (min-width: 600px) we can give them more semantic names like “breakpoint-large” or “breakpoint-a-really-large-computer-machine”.
+
+  USAGE
+  @include bp-mobile {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+*/

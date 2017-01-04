@@ -1,0 +1,15 @@
+// Import modal Partials //
+
+// Base Core Styling //
+#modalDrag {
+  border-top-left-radius: 5px;
+  color: #EFEFEF;
+  cursor: move;
+  float: left;
+  margin: -15px 0 -15px -15px;
+  padding: 15px;
+}
+
+.modal-header .close {
+    margin-top: 3px;
+}

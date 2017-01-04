@@ -1,0 +1,17 @@
+<template name="Campaigns">
+  {{#if $.Session.get 'newCampaign'}}
+		{{> NewCampaign}}
+	{{else}}
+		<button id="newCampaign" class="newItem">Add New Campaign</button>
+	{{/if}}
+
+	<section id="campaignsList" class="itemList">
+		{{#if Template.subscriptionsReady}}
+			{{#each campaigns}}
+				{{> CampaignsItem}}
+			{{/each}}
+		{{else}}
+			{{> Loading}}
+		{{/if}}
+	</section>
+</template>

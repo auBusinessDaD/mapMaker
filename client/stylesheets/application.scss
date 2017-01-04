@@ -1,0 +1,20 @@
+// Variables //
+// Customisable variables that can be utilised throughout other partials //
+$primaryColour: #3BBB41;
+$secondaryColour: #088810;
+
+// Modules //
+// The modules directory is reserved for Sass code that doesn't cause Sass to actually output CSS. Things like mixin declarations, functions, and variables. //
+@import "modules/modules";
+
+// Layouts //
+// DESCRIPTION //
+@import "layouts/layouts";
+
+// Core //
+// DESCRIPTION //
+@import "core/core";
+
+// Vendors //
+// DESCRIPTION //
+@import "vendors/vendors";

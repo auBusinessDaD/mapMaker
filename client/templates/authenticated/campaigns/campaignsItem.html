@@ -1,0 +1,21 @@
+<template name="CampaignsItem">
+  <article class="campaignItem">
+		{{#if editMode}}
+      {{#autoForm collection="Campaigns" id="updateCampaignId" type="update" doc=this autosave=true}}
+        <fieldset>
+          <legend>Edit {{name}}</legend>
+          {{> afQuickField name='name'}}
+          {{> afQuickField name='description'}}
+          {{> afQuickField name="game" type="selectize"}}
+        </fieldset>
+      {{/autoForm}}
+      <i class="fa fa-close editCampaign" title="Close Edit"></i>
+		{{else}}
+      <h3>{{name}}</h3>
+			<p>{{description}}</p>
+      <i class="fa fa-eye viewCampaign" title="View Campaign"></i>
+      <i class="fa fa-pencil editCampaign" title="Edit Campaign"></i>
+  		<i class="fa fa-share viewMaps" title="View Maps"></i>
+		{{/if}}
+	</article>
+</template>

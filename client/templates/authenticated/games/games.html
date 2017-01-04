@@ -1,0 +1,17 @@
+<template name="Games">
+  {{#if $.Session.get 'newGame'}}
+		{{> NewGame}}
+	{{else}}
+		<button id="newGame" class="newItem">Add New Game</button>
+	{{/if}}
+
+	<section id="gamesList" class="itemList">
+		{{#if Template.subscriptionsReady}}
+			{{#each games}}
+				{{> GamesItem}}
+			{{/each}}
+		{{else}}
+			{{> Loading}}
+		{{/if}}
+	</section>
+</template>

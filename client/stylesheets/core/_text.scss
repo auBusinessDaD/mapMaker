@@ -1,0 +1,45 @@
+a {
+  // Defines a hyperlink
+  color: #3BBB41;
+}
+
+a:hover,
+a.active {
+  color: #088810 !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+b {
+  // Defines bold text
+
+}
+
+i {
+  // Defines a part of text in an alternate voice or mood
+
+}
+
+p {
+  //Defines a paragraph
+
+}
+
+q {
+  // Defines a short quotation
+
+}
+
+s {
+  // Defines text that is no longer correct
+  color: red;
+}
+
+u {
+  // Defines text that should be stylistically different from normal text
+
+}
+
+.primaryText {
+  color: $primaryColour;
+}
